@@ -1,0 +1,82 @@
+.Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px 0px;
+    gap: 136px;
+    position: absolute;
+    height: 103.54px;
+    left: 0px;
+    right: 11px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.LogoAndName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0px;
+    /* width: 348.58px; */
+    height: 76.54px;
+}
+
+.Logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 81.58px;
+    height: 83.54px;
+}
+
+.nameDesig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #1C1C1E;
+    /* gap: 0px; */
+    /* padding: 0px; */
+    /* width: 277px; */
+    /* height: 68px; */
+}
+
+.name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: 0.145em;
+    color: #1C1C1E;
+}
+
+.designation {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.145em;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+    /* width: 407px; */
+    height: 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1C1C1E;
+}
