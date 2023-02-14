@@ -1,0 +1,99 @@
+.artStory {
+    position: absolute;
+    width: 1084px;
+    height: 56px;
+    left: 195px;
+    top: 152px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.2px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #1C1C1E;
+}
+
+.Arts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 1125px;
+    height: 1210px;
+    left: 195px;
+    top: 233px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 1123px;
+    height: 429px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 1125px;
+    height: 405px;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 1125px;
+    height: 336px;
+}
+
+.artFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 479px;
+    position: absolute;
+    width: 1129px;
+    height: 131px;
+    left: 193px;
+    top: 1527px;
+}
+
+.artConnectMemoji {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 275px;
+    height: 85px;
+    left: 0px;
+    top: -31px;
+}
+
+.ArtLetsConnect {
+    width: 225px;
+    height: 38px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.65px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #1C1C1E;
+}

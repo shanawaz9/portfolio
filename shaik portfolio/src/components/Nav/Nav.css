@@ -4,23 +4,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 60px 0px;
-    gap: 136px;
-    position: absolute;
+    gap: 431px;
+    position: fixed;
     height: 103.54px;
-    left: 0px;
-    right: 11px;
+    left: 119px;
+    right: 80px;
     top: 0px;
-    background: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .LogoAndName {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     padding: 0px;
-    /* width: 348.58px; */
-    height: 76.54px;
+    width: 348.58px;
+    height: 83.54px;
 }
 
 .Logo {
@@ -38,45 +37,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #1C1C1E;
-    /* gap: 0px; */
-    /* padding: 0px; */
-    /* width: 277px; */
-    /* height: 68px; */
 }
 
 .name {
-    font-family: 'Inter';
+    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 26px;
-    line-height: 39px;
-    letter-spacing: 0.145em;
+    font-size: 27.65px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
     color: #1C1C1E;
 }
 
 .designation {
-    font-family: 'Inter';
+    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 12px;
-    letter-spacing: 0.145em;
+    font-size: 19.2px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #1C1C1E;
 }
 
 .navMenu {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    gap: 100px;
-    /* width: 407px; */
-    height: 42px;
-    font-family: 'Inter';
+    padding: 0px 46px 0px 0px;
+    gap: 97px;
+    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 19.2px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #1C1C1E;
+}
+
+.ActiveLink {
+    color: #943AD0;
+}
+
+.InActiveLink {
     color: #1C1C1E;
 }
