@@ -1,32 +1,32 @@
-name: Deploy to Hostinger
+name: deploy to hostinger
+
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-      - name: Install dependencies
-        run: npm install
-      - name: Build project
-        run: npm run build
-      - name: Deploy project
+        uses: actions/setup-node@v3
         with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
           host: shanawazshaik.com
           username: shanawazhussain989@gmail.com
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: ./build/
           target: /public_html
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
