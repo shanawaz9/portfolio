@@ -26,6 +26,6 @@ jobs:
           username: shanawazhussain989@gmail.com
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: ./build/
-          target: /public_html
+          target: public_html
       - run: npm ci
       - run: npm run build --if-present
