@@ -22,10 +22,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-          host: shanawazshaik.com
-          username: shanawazhussain989@gmail.com
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: ./build/
-          target: public_html
+          server: ${{ secrets_FTP_SERVER }}
+          username: ${{ secrets_FTP_USERNAME }}
+          password: ${{ secrets_FTP_PASSWORD }}
+          local-dir: ./build
+          server-dir: /public_html
       - run: npm ci
       - run: npm run build --if-present
