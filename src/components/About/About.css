@@ -8,7 +8,7 @@
     position: absolute;
     width: 1113px;
     height: 501px;
-    left: 195px;
+    left: calc(50% - 1113px/2 - 6px);
     top: 184px;
 }
 

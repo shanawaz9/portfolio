@@ -2,7 +2,7 @@
     position: absolute;
     width: 1084px;
     height: 56px;
-    left: 195px;
+    left: calc(50% - 1084px/2 - 20.5px);
     top: 152px;
     font-family: 'Josefin Sans';
     font-style: normal;
@@ -24,7 +24,7 @@
     position: absolute;
     width: 1125px;
     height: 1210px;
-    left: 195px;
+    left: calc(50% - 1125px/2);
     top: 233px;
 }
 
@@ -68,7 +68,7 @@
     position: absolute;
     width: 1129px;
     height: 131px;
-    left: 193px;
+    left: calc(50% - 1129px/2);
     top: 1527px;
 }
 

@@ -3,12 +3,12 @@ import Nav from './components/Nav/Nav';
 import Body from './components/Body/Body';
 import About from './components/About/About'
 import Art from './components/Art/Art'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Routes>
           <Route index element={<Body />} />
@@ -18,8 +18,7 @@ function App() {
       </div>
       <Nav />
 
-    </BrowserRouter>
-// clip < ~/.ssh/id_ed25519.pub
+    </HashRouter>
   );
 }
 

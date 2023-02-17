@@ -8,19 +8,17 @@
     position: absolute;
     width: 1171px;
     height: 400.87px;
-    left: 195px;
+    left: calc(50% - 1164px/2 + 19.5px);
     top: 196px;
 }
+
 
 .greetingMemoji {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: flex-end;
     padding: 0px;
-    gap: 2px;
-    width: 439px;
-    height: 93px;
+    gap: 8px;
 }
 
 .Memoji {
@@ -45,6 +43,11 @@
     color: #2F2F32;
 }
 
+.TriImage {
+    width: 497.59px;
+    height: 400.87px;
+}
+
 .nameColor {
     color: #943AD0;
 }
@@ -55,9 +58,56 @@
     font-size: 23.04px;
 }
 
-.Tri {
-    width: 497.59px;
-    height: 400.87px;
+@media screen and (max-width: 600px) {
+    .IntroBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 362.41px;
+        height: 490px;
+        left: calc(50% - 360px/2 + 0.21px);
+        top: 99px;
+    }
+
+    .NameParagraph {
+        width: 311px;
+        height: 140px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #2F2F32;
+    }
+
+    .resumeText {
+        color: #943AD0;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    .TriImage {
+        width: 268px;
+        height: 228px;
+    }
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 0px 0px 12px;
+    gap: 69px;
+    position: absolute;
+    width: 1141px;
+    height: 1221px;
+    left: calc(50% - 1141px/2 - 7px);
+    top: 682px;
 }
 
 .projectHeader {
@@ -68,8 +118,6 @@
     padding: 0px;
     gap: 10px;
     position: absolute;
-    left: 193px;
-    top: 675px;
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 600;
@@ -77,28 +125,34 @@
     line-height: 38px;
     letter-spacing: 0.02em;
     color: #1C1C1E;
+    top: -7px;
 }
 
 .ProjectIcon {
     position: absolute;
     width: 100px;
     height: 74px;
-    left: 343px;
-    top: 644px;
+    left: 159px;
 }
 
-.projects {
+.ProjectRow {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 73px;
+}
+
+.ProjectHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px 0px 0px 12px;
-    gap: 69px;
-    position: absolute;
-    width: 1141px;
-    height: 1221px;
-    left: 180px;
-    top: 750.88px;
+    padding: 0px;
+    gap: 10px;
+    width: 253px;
+    height: 74px;
 }
 
 .topProjects {
@@ -108,10 +162,19 @@
     align-items: flex-end;
     padding: 0px;
     gap: 111px;
-
     width: 1129px;
     height: 576px;
+}
 
+.belowProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 111px;
+    width: 1129px;
+    height: 576px;
 }
 
 .project1 {
@@ -123,16 +186,6 @@
     gap: 34px;
     width: 503px;
     height: 576px;
-}
-
-.titleDesc {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-    width: 477px;
-    height: 130px;
 }
 
 .titleDesc {
@@ -169,17 +222,6 @@
     color: #3C3C3F;
 }
 
-.ViewStudyLink {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px;
-    gap: 4px;
-    width: 164px;
-    height: 28px;
-}
-
 .viewCaseStudy {
     font-family: 'Josefin Sans';
     font-style: normal;
@@ -195,18 +237,176 @@
     height: 28px;
 }
 
+.ViewStudyLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 164px;
+    height: 28px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 41px;
+        position: absolute;
+        width: 311px;
+        height: 1738px;
+        left: calc(50% - 311px/2 - 4.5px);
+        top: 630px;
+    }
+
+    .projectHeader {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 38px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #1C1C1E;
+    }
+
+    .ProjectIcon {
+        position: absolute;
+        width: 66px;
+        height: 48px;
+        left: 108px;
+        top: -23px;
+    }
+
+    .ProjectRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        /* gap: 214px; */
+        width: 0px;
+    }
+
+    .topProjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 36px;
+        width: 0px;
+        height: 820px;
+    }
+
+    .belowProjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 36px;
+        width: 0px;
+        height: 776px;
+    }
+
+    .project1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 18px;
+        width: 0px;
+        height: 576px;
+    }
+
+    .projectImage {
+        width: 311px;
+        height: 256px;
+    }
+
+    .titleDesc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+        width: 276px;
+        height: 96px;
+    }
+
+    .projectTitle {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #1C1C1E;
+    }
+
+    .projectDescrip {
+        width: 276px;
+        height: 56px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #3C3C3F;
+    }
+
+    .viewCaseStudy {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        text-decoration-line: underline;
+        color: #943AD0;
+        width: 110px;
+        height: 28px;
+    }
+
+    .ViewStudyLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+}
+
 .about {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 10px;
+    gap: 8px;
     position: absolute;
     width: 111px;
     height: 38px;
-    left: 702px;
+    left: calc(50% - 111px/2 + 1px);
     top: 2015px;
+
 }
 
 .aboutText {
@@ -230,7 +430,7 @@
     position: absolute;
     width: 1129px;
     height: 131px;
-    left: 193px;
+    left: calc(50% - 1129px/2);
     top: 2115px;
 }
 
@@ -325,4 +525,146 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #3C3C3F;
+}
+
+.connectMemojiImage {
+    width: 86px;
+    height: 86px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        position: absolute;
+        width: 279px;
+        height: 149px;
+        left: calc(50% - 279px/2 - 20.5px);
+        top: 2510px;
+        gap: 101px;
+    }
+
+    .connectMemoji {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 204px;
+        height: 72px;
+        left: 0px;
+        top: -31px;
+    }
+
+    .letsConnect {
+        width: 132px;
+        height: 38px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 38px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #1C1C1E;
+    }
+
+    .connectMemojiImage {
+        width: 72px;
+        height: 72px;
+    }
+
+    .bodySocials {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        position: absolute;
+        width: 257px;
+        height: 14px;
+        left: 0px;
+        top: 38px;
+    }
+
+    .mail {
+        position: absolute;
+        width: 271px;
+        height: 14px;
+        left: 0px;
+        top: 72px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #3C3C3F;
+    }
+
+    .copyrightDesign {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 14px;
+        width: 298px;
+        height: 46px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: #3C3C3F;
+        padding-bottom: 90px;
+    }
+
+    .AANav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 121px;
+        position: absolute;
+        width: 293px;
+        height: 38px;
+        left: 28px;
+        top: 2434px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 38px;
+        letter-spacing: 0.02em;
+        color: #1C1C1E;
+    }
+
+    .aboutSmText {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 94px;
+        height: 38px;
+    }
+
+    .artText {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 67px;
+        height: 38px;
+    }
 }
